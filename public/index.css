@@ -1,0 +1,37 @@
+.header{
+    background-color: #f4e6ee;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 500px;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.herf{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #ecc3e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+}
+
+img:hover {
+    transform: translateY(-10px);
+}

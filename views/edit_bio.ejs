@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Bio</title>
+    <link rel="stylesheet" href="/edit.css">
+</head>
+<body>
+    <form action="/profile_interface/li_profiles/<%= user.id %>?_method=PATCH" method="POST">
+        <h1>Edit Bio for <%= user.name %></h1>
+        <textarea name="bio" rows="5" cols="30"><%= user.bio %></textarea><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

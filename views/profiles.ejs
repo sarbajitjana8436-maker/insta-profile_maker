@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile_list</title>
+    <link rel="stylesheet" href="/profiles.css">
+</head>
+<body>
+    <form action="">
+    <h1>your profile</h1>
+    <div class="main-profile">
+        <div class="profile">
+            <% for(user of users){ %>
+                <div class="profile-card">
+                    <h2><%= user.name %></h2>
+                    <h3><h2>Email:</h2><%= user.email %></h3>
+                    <h3><h2>Bio:</h2><%= user.bio %></h3>
+                    <form action="/profile_interface/li_profiles/<%= user.id %>/edit" method="get">
+                        <button type="submit">Edit Bio</button>
+                        </form>
+                        <form action="/profile_interface/li_profiles/<%= user.id %>?_method=DELETE" method="POST">
+                            <button type="submit">Delete</button>
+                        </form>
+                    
+                </div>
+            <% } %>
+        </div>
+    </div>
+    </form>
+    
+</body>
+</html>

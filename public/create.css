@@ -1,0 +1,66 @@
+.id{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #7d3d5d;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    height: 500px;
+    background-image: url("/insta_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+input.inp-name, input.inp-email, textarea.inp-bio {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f591b9;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+
+}
+input.inp-name:focus, input.inp-email:focus, textarea.inp-bio:focus {
+    border-color: #ff99cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 153, 204, 0.5);
+}
+input.inp-name::placeholder, input.inp-email::placeholder, textarea.inp-bio::placeholder {
+    color: #999;
+}
+input.inp-name, input.inp-email, input.inp-bio:hover {
+    border-color: #ff99cc;  
+    box-shadow: 0 0 5px rgba(255, 153, 204, 0.3);
+}
+
+button.submit {
+    width: 50%;
+    padding: 10px;
+    background-color: #7d3d5d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button.submit:hover {
+    background-color: #ff99cc;
+}   
+
+h1{
+    color: #7d3d5d;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+    text-decoration: underline;
+}
