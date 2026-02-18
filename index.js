@@ -4,6 +4,7 @@ const port = 3000;
 const Path = require('path');
 const {v4: uuidv4} = require('uuid');
 const methodOverride = require('method-override');
+const mongoose = require('mongoose');
 
 
 // Middleware
@@ -93,6 +94,10 @@ app.delete('/profile_interface/li_profiles/:id', (req, res) => {
     users = users.filter((u)=> u.id !== id);
     res.redirect('/profile_interface/li_profiles');
 });
+
+mongoose.connect('mongodb://127.0.0.1:27017/')
+  .then(() => console.log('Connected!'))
+  .catch(err => console.log(err));
 
 
 
